@@ -1,0 +1,15 @@
+[15:58:02] INFO          stage=reading_dxf          Reading DXF
+[15:58:03] SUCCESS       stage=reading_dxf          Entities detected: 320
+[15:58:03] INFO          stage=analyzing_geometry   Analysing geometry on layers: CONSTRUCTION, CONTRUCTION
+[15:58:03] INFO          stage=analyzing_geometry   Segments extracted: 108, circles: 10
+[15:58:03] INFO          stage=detecting_profiles   Detecting closed profiles
+[15:58:03] SUCCESS       stage=detecting_profiles   4 closed polygon(s) detected; 0 hole(s) identified
+[15:58:03] INFO          stage=classifying_features Feature classification: OUTER_BOUNDARY=11, THROUGH_HOLE=3
+[15:58:03] ASSUMPTION    stage=generating_solid     entity=extrusion_depth reason=2D DXF contains no 3rd-dimension data. Extrusion depth set to 10.0 mm — a 2D DXF carries no Z information, so this value was supplied by the user/operator, not derived from the drawing.
+[15:58:03] SUCCESS       stage=generating_solid     Solid generated
+[15:58:03] INFO          stage=validating_geometry  Validating geometry
+[15:58:03] SUCCESS       stage=validating_geometry  Geometry valid
+[15:58:03] INFO          stage=exporting_step       Exporting STEP and GLB
+[15:58:04] SUCCESS       stage=exporting_step       STEP generated and verified
+[15:58:04] INFO          stage=preparing_viewer     Preparing 3D viewer (GLB verified)
+[15:58:04] SUCCESS       stage=preparing_viewer     Viewer ready: 2596 vertices, 5160 faces

@@ -1,0 +1,163 @@
+/* CAD Studio - dark IDE theme */
+html, body, [class*="css"] {
+    font-family: 'Segoe UI', 'Consolas', system-ui, sans-serif;
+}
+
+.stApp {
+    background: #1e1e1e;
+    color: #d4d4d4;
+}
+
+section[data-testid="stSidebar"] {
+    background: #181818;
+    border-right: 1px solid #2d2d2d;
+}
+
+/* Header banner */
+.cad-header {
+    background: linear-gradient(90deg, #14181f 0%, #1c2530 100%);
+    border: 1px solid #2d3340;
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cad-header h1 {
+    color: #4fc3f7;
+    font-size: 22px;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.cad-header .cad-sub {
+    color: #7f8ca3;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.cad-badge {
+    background: #0f3d24;
+    color: #4caf50;
+    border: 1px solid #1f6b3a;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Stepper */
+.stepper-wrap {
+    display: flex;
+    background: #17191d;
+    border: 1px solid #2b2f36;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.step-item {
+    flex: 1;
+    padding: 12px 8px;
+    text-align: center;
+    border-right: 1px solid #2b2f36;
+    position: relative;
+}
+.step-item:last-child { border-right: none; }
+.step-num {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.step-label {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.step-done { background: #10251a; }
+.step-done .step-num { background: #2e7d32; color: white; }
+.step-done .step-label { color: #66bb6a; }
+
+.step-active { background: #0e2233; }
+.step-active .step-num { background: #1976d2; color: white; }
+.step-active .step-label { color: #64b5f6; }
+
+.step-locked { background: #17191d; opacity: 0.55; }
+.step-locked .step-num { background: #35383e; color: #888; }
+.step-locked .step-label { color: #666; }
+
+/* Cards / panels */
+.cad-panel {
+    background: #17191d;
+    border: 1px solid #2b2f36;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+}
+.cad-panel h3 {
+    color: #e0e0e0;
+    margin-top: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #2b2f36;
+    padding-bottom: 8px;
+}
+.metric-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.metric-box {
+    background: #1c1f24;
+    border: 1px solid #2b2f36;
+    border-radius: 6px;
+    padding: 10px 14px;
+    min-width: 120px;
+}
+.metric-box .m-label {
+    font-size: 11px;
+    color: #8a93a6;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.metric-box .m-value {
+    font-size: 18px;
+    color: #4fc3f7;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+/* Log lines */
+.log-line { font-family: 'Consolas', monospace; font-size: 13px; padding: 2px 0; }
+.log-INFO { color: #90caf9; }
+.log-SUCCESS { color: #81c784; }
+.log-WARNING { color: #ffb74d; }
+.log-ERROR { color: #e57373; }
+.log-NOT_CONVERTED { color: #ba68c8; }
+.log-ASSUMPTION { color: #4fc3f7; }
+
+.assumption-box {
+    background: #2b230f;
+    border: 1px solid #6b5320;
+    border-radius: 6px;
+    padding: 10px 14px;
+    color: #ffcc80;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.stButton>button {
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.stButton>button:disabled {
+    background: #33373d;
+    color: #777;
+}
